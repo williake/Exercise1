@@ -6,14 +6,14 @@ To complete this exercise you will have to use git. Create one or several commit
 When answering the questions, remember to use all the resources at your disposal. Asking the internet isn't a form of "cheating", it's a way of learning.
 
  ### What is concurrency? What is parallelism? What's the difference?
- > *Your answer here*
+ > Concurrency is when you make code that can run at the same time. Parallelism is when the code is running at the same time. ie. the ability to do a thing vs. actually doing so.
  
  ### Why have machines become increasingly multicore in the past decade?
- > *Your answer here*
+ > its easier to have more cores than to make singe cores that can run at higher frequencies without running into heat problems or stability problems.
  
  ### What kinds of problems motivates the need for concurrent execution?
  (Or phrased differently: What problems do concurrency help in solving?)
- > *Your answer here*
+ > Doing multiple things at the same time, in way thats easy to scale.
  
  ### Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
  (Come back to this after you have worked on part 4 of this exercise)
