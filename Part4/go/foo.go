@@ -3,29 +3,32 @@
 package main
 
 import (
-    . "fmt"
-    "runtime"
-    "time"
+. "fmt"
+"runtime"
+"time"
 )
 
 var i = 0
 
 func incrementing() {
-    //TODO: increment i 1000000 times
+	for ; i < 1000000  ;i++ {}
+	//TODO: increment i 1000000 times
 }
 
 func decrementing() {
-    //TODO: decrement i 1000000 times
+	for ; i < 1000000  ;i-- {}
+	//TODO: decrement i 1000000 times
 }
 
 func main() {
-    runtime.GOMAXPROCS(runtime.NumCPU())    // I guess this is a hint to what GOMAXPROCS does...
-	                                    // Try doing the exercise both with and without it!
+	runtime.GOMAXPROCS(runtime.NumCPU())    // I guess this is a hint to what GOMAXPROCS does...
+	// Try doing the exercise both with and without it!
+	go incrementing()
+	go decrementing()
+	// TODO: Spawn both functions as goroutines
 
-    // TODO: Spawn both functions as goroutines
-	
-    // We have no way to wait for the completion of a goroutine (without additional syncronization of some sort)
-    // We'll come back to using channels in Exercise 2. For now: Sleep.
-    time.Sleep(100*time.Millisecond)
-    Println("The magic number is:", i)
+	// We have no way to wait for the completion of a goroutine (without additional syncronization of some sort)
+	// We'll come back to using channels in Exercise 2. For now: Sleep.
+	time.Sleep(100*time.Millisecond)
+	Println("The magic number is:", i)
 }
