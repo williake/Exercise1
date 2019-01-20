@@ -17,10 +17,13 @@ When answering the questions, remember to use all the resources at your disposal
  
  ### Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
  (Come back to this after you have worked on part 4 of this exercise)
- > *Your answer here*
+ > Can be both; It might require a change in perspective. And if the problem can be easily seperated into smaller problems. 
  
  ### What are the differences between processes, threads, green threads, and coroutines?
- > *Your answer here*
+ > a process can have multiple threads. different processes dont share address space.
+threads share address space.
+Green threads are threads made by a vm or a runtime library instead of the operating system.
+
  
  ### Which one of these do `pthread_create()` (C/POSIX), `threading.Thread()` (Python), `go` (Go) create?
  > *Your answer here*
