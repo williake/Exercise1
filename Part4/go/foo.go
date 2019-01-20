@@ -11,12 +11,16 @@ import (
 var i = 0
 
 func incrementing() {
-	for ; i < 1000000  ;i++ {}
+	for j := 0; j < 1000000  ;j++ {
+		i++
+	}
 	//TODO: increment i 1000000 times
 }
 
 func decrementing() {
-	for ; i < 1000000  ;i-- {}
+	for j := 0; j < 1000000  ;j++ {
+		i--
+	}
 	//TODO: decrement i 1000000 times
 }
 
