@@ -26,13 +26,15 @@ Green threads are threads made by a vm or a runtime library instead of the opera
 
  
  ### Which one of these do `pthread_create()` (C/POSIX), `threading.Thread()` (Python), `go` (Go) create?
- > *Your answer here*
+ > `pthread_create()`  (C/POSIX) : thread.
+ `threading.Thread()` (Python) : thread.
+ `go` (Go) : green thread.
  
  ### How does pythons Global Interpreter Lock (GIL) influence the way a python Thread behaves?
- > *Your answer here*
+ > only one thread per process can run at a time
  
  ### With this in mind: What is the workaround for the GIL (Hint: it's another module)?
  > *Your answer here*
  
  ### What does `func GOMAXPROCS(n int) int` change? 
- > *Your answer here*
+ > it limits the amount of operating system threads that can run go user code at the same time.
